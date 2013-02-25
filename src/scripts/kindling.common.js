@@ -9,7 +9,7 @@ var kindling = kindling || (function (domReady) {
 	return {
 		getUsernameRegex: function (username) {
 			var escapedUsername = regExpEscape(username);
-			return new RegExp('\\b(' + escapedUsername + '|' + escapedUsername.split(' ').join('|') + ')\\b', 'i');
+			return new RegExp('\\b(Rob|Robert|devs|anyone|rs|' + escapedUsername + '|' + escapedUsername.split(' ').join('|') + ')\\b', 'i');
 		},
 
 		getDomain: function (url) {
